@@ -1,0 +1,72 @@
+@media(max-width: 800px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media(max-width: 680px) {
+    .container nav{
+        display: none;
+    }
+
+    .one, .two, .three{
+        background-color: #fff;
+        height: 0.5rem;
+        width: 100%;
+        margin: 0.6rem auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-burguer{
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        width: 4.5rem;
+        height: 3.5rem;
+    }
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(138deg, rgba(131,58,180,1) 0%, rgba(33,205,255,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu-section.on nav{
+        display: block;
+    }
+
+    .menu-section.on .menu-burguer .one{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-burguer .two{
+        opacity: 0;
+    }   
+    .menu-section.on .menu-burguer .three{
+        transform: rotate(-45deg) translate(6px, -6px);
+    }   
+
+    .menu-section.on ul{
+        display: block;
+        text-align: center;
+    }
+
+    .menu-section.on nav ul li a{
+        transition-duration: 0.3s;
+        font-size: 5rem;
+        line-height: 15rem;
+    }
+
+    .menu-section.on nav ul li{
+        margin-left: 0;
+    }
+    
+
+}    
+    
